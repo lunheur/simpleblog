@@ -84,5 +84,6 @@ test:
 production:
   <<: *default
   database: simpleblog_production
-  username: simpleblog
-  password: <%= ENV['SIMPLEBLOG_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  # username: simpleblog
+  # password: <%= ENV['SIMPLEBLOG_DATABASE_PASSWORD'] %>
