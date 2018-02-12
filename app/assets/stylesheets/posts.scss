@@ -1,0 +1,19 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.show-links {
+  float: right;
+}
+
+.posts-card {
+  margin-bottom: 1.5rem;
+}
+
+.posts-title-link {
+  color: inherit;
+}
+
+.posts-title-link:hover {
+  text-decoration: none;
+}

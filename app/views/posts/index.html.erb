@@ -1,0 +1,26 @@
+<%= render 'shared/navbar' %>
+
+<div class="container nav-margin">
+  <p id="notice"><%= notice %></p>
+
+  <h1>Posts</h1>
+
+  <div class="">
+    <% @posts.each do |post| %>
+      <div class="card posts-card">
+        <div class="card-body">
+          <a href="/posts/<%= post.id %>" class="posts-title-link">
+            <h4 class="card-title"><%= post.title %></h4>
+          </a>
+          <%= simple_format post.body, class: "card-text" %>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"><%= post_time_readable(post.created_at) + " ago" %></small>
+          <small class="text-muted show-links">
+            <%= link_to 'More', post %>
+          </small>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

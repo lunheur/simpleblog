@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+
+  <%= link_to "Blog About Nuthin'", posts_path, :class => "navbar-brand" %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <%= link_to 'New Post', new_post_path, :class => "nav-link#{" active" if current_page? new_post_path}" %>
+      </li>
+    </ul>
+  </div>
+</nav>
