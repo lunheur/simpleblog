@@ -1,3 +1,3 @@
 Playing with Rails
 
-[vlsimpleblog.herokuapp.com](vlsimpleblog.herokuapp.com)
+[http://vlsimpleblog.herokuapp.com](vlsimpleblog.herokuapp.com)
